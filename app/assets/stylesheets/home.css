@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header ul{
+  display: flex;
+ border: 1px solid black;
+}
+li{
+  margin-left: auto;
+  margin-right: 16px;
+  cursor: pointer;
+  list-style: none;
+}
+li:first-child{
+  background-color: #d55e5ec0;
+}
+
+li+li{
+  margin-left: 16px;
+}
+
+li a{
+  text-decoration: none;
+  color: black;
+}

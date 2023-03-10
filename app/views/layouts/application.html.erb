@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ManageApp</title>
+    <title>Management</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -9,9 +9,18 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-
   <body>
-  こんにちは
+    <header>
+      <ul>
+        <li><%=link_to('ホーム','/')%></li>
+        <li> <%=link_to('従業員一覧','/member')%></li>
+        <li><%=link_to('勤怠管理','/member/management')%></li>
+        <li> <%=link_to('申請承認','/')%></li>
+        <li> <%=link_to('休暇','/')%></li>
+        <li> <%=link_to('設定','/setting')%></li>
+        <li> <%=link_to('ヘルプ','/help')%></li>
+      </ul>
+    </header>
     <%= yield %>
   </body>
 </html>

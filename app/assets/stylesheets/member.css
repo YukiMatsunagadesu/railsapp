@@ -1,0 +1,24 @@
+.container{
+  display: flex;
+  flex: wrap;
+}
+
+.member-add{
+  border: 1px solid black;
+  margin-top: 32px;
+  text-align: center;
+  cursor: pointer;
+ 
+}
+.member{
+  border: 1px solid black;
+  padding: 16px;
+  margin-top: 16px;
+  margin-left: 32px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.member a{
+  text-decoration: none;
+}
