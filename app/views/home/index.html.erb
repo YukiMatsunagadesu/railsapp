@@ -1,9 +1,15 @@
-<p><%= Date.today.strftime("%Y/%m/%d") %></p>
+<div class='today'>
+  <%= Date.today.strftime("%Y/%m/%d") %>
+</div>
+<div class='greeting'>
+  <%= @greeting %>
+</div>
+
 
 freeeの勤怠管理アプリはこんな感じで使うことができます
 
-<div>
-  <p>お知らせ1</p>
-  <p>お知らせ2</p>
-  <p>お知らせ3</p>
+<div class='notification'>
+  <li>お知らせ1</li>
+  <li>お知らせ2</li>
+  <li>お知らせ3</li>
 </div>

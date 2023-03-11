@@ -1,9 +1,9 @@
     <div class=member-add><%=link_to('メンバーを追加','/member/add')%></div>
    <div class="container"> 
-      <% @users.each do |user| %>
+      <% @employees.each do |employee| %>
     <div class='member'>
       写真イメージ
-      <%=link_to(user.name,"/member/#{user.id}")%>
+      <%=link_to(employee.name,"/member/#{employee.id}")%>
     </div>
   <% end %>
 

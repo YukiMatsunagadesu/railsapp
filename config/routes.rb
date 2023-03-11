@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   get 'member/add', to:'member#add'
   get 'member/management', to:'member#management'
   get 'member/:id', to: 'member#show'
-  
+  post "member/create", to: 'member#create'
   get 'member/attendance', to: 'member#attendance'
 end

@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  phone: MyString
+  employee_number: MyString
+  employment_type: MyString
+  attendance_days: 1
+  paid_leave_days: 1
+  absent_days: 1
+
+two:
+  name: MyString
+  phone: MyString
+  employee_number: MyString
+  employment_type: MyString
+  attendance_days: 1
+  paid_leave_days: 1
+  absent_days: 1

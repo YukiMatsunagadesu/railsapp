@@ -1,1 +1,9 @@
-<p>メンバーを追加するよね</p>
+
+<div class="form_container">
+  <%= form_tag("/member/create") do %>
+    名前<input type="text" name="name">
+    電話番号<input type="text" name="phone">
+    雇用形態<input type="text" name=employee_type>
+    <input type="submit" value="投稿"> 
+  <% end %>
+</div>
