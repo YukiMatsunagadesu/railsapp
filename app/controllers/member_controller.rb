@@ -9,6 +9,7 @@ class MemberController < ApplicationController
     @employee = Employee.find(params[:id])
   end
   def management
+    @employees=Employee.all
   end
 
   def create 

@@ -1,0 +1,30 @@
+<header class="member_header">
+  <div class="page_change">
+    <div class="admin_page">
+      <%=link_to("管理者用ページ","/")%>
+    </div>
+    <div class="member_page">
+      <%=link_to("○○さんのページ","/employee/index")%>
+    </div>
+  </div>
+  <ul>
+    <li><%=link_to("出退勤","/employee/work")%></li>
+    <li><%=link_to("カレンダー","/employee/calender")%></li>
+    <li><%=link_to("お知らせ","/employee/notice")%></li>
+  </ul>
+</header>
+
+<div class=time_now>
+  <p> 今の時間<%= Time.now %></p>
+
+</div>
+
+<div class="employee_container">
+  <div class="work_container">
+    <div class="start_work">出勤</div>
+    <div class="break_start"> 休憩入</div>
+    <div class="break_end">休憩戻り</div>
+    <div class="end_work">退勤</div>
+
+  </div>
+</div>

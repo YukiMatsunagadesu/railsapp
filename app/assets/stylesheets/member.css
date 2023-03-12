@@ -22,3 +22,15 @@
 .member a{
   text-decoration: none;
 }
+
+/*  /member/[id]  独自のスタイリング  */
+.member_detail_container{
+
+}
+.member_detail{
+  margin: 16px auto;
+  display: block;
+  font-size: 32px;
+  border: 1px solid black;
+  padding: 16px;
+}

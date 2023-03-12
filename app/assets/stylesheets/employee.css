@@ -1,0 +1,59 @@
+header{
+  display: flex;
+}
+
+
+
+
+.member_header{
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.member_header .admin_page{
+  font-size: 16px;
+  margin-left: 16px;
+  opacity: 0.3;
+}
+
+.member_header ul{
+  margin-left: auto;
+}
+
+.member_header li{
+  list-style: none;
+}
+.member_header li+li{
+  margin-left: 16px;
+}
+
+.time_now{
+  text-align: center;
+  margin-top: 64px;
+}
+
+
+.employee_container .work_container{
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  font-size: 64px;
+}
+
+.start_work{
+  background-color: #ec2e2e;
+  cursor: pointer;
+}
+
+.break_start{
+  background-color: #37d6ee;
+  cursor: pointer;
+}
+.break_end{
+  background-color: #38e85e;
+  cursor: pointer;
+}
+.end_work{
+  background-color: #e827a8;
+  cursor: pointer;
+}
