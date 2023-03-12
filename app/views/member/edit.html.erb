@@ -1,7 +1,7 @@
     <header class="admin_header">
       <div class="page_change">
         <div class="admin_page"><%=link_to('管理者用ページ','/')%></div>
-        <div class="member_page"><%=link_to('従業員用ページに切り替える','/employee/index')%></div>
+        <div class="member_page"><%=link_to('従業員用ページ','/employee/index')%></div>
       </div>
         <ul>
           <li><%=link_to('ホーム','/')%></li>
@@ -13,5 +13,13 @@
           <li> <%=link_to('ヘルプ','/help')%></li>
         </ul>
     </header>
-freeeの勤怠管理アプリでわからないことがありますか？
-解決策は濃いらです
+
+
+    編集してください
+    <%= form_tag("/member/#{@employee.id}/update") do %>
+      名前<input type="text" name="name">
+      電話番号<input type="text" name="phone">
+      雇用形態<input type="text" name=employee_type>
+      <input type="submit" value="保存"> 
+     <% end %>
+

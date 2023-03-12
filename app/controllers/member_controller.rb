@@ -17,4 +17,15 @@ class MemberController < ApplicationController
     @employee.save
     redirect_to("/member")
   end
+  def edit
+    @employee = Employee.find(params[:id])
+  end
+  def update
+    @employee = Employee.find(params[:id])
+    @employee.name = params[:name]
+    @employee.phone = params[:phone]
+    @employee.employment_type = params[:employment_type]
+    @employee.save
+    redirect_to('/member')
+  end
 end
